@@ -142,7 +142,7 @@ while True:
         print "resetting"
         email_text=hostname+" has started a new program: "+ new
         email_subject=hostname+" has reset"
-        send_email("priscilla.erickson@gmail.com", email_subject, email_text)
+        send_email("becker.doerthe@googlemail.com", email_subject, email_text)
         a=readInput(inputfile)
         convertInt(a,intlist)
         convertFloat(a,floatlist)
@@ -247,7 +247,7 @@ while True:
         print 'Low Alarm=', a["lowAlarm"]
         subject=hostname+ " has a temperature problem"
         message=hostname+ " has a temperature of " + str(currtemp)
-        send_email("priscilla.erickson@gmail.com", subject, message)
+        send_email("becker.doerthe@googlemail.com", subject, message)
         print "Email sent"
         hasAlarmed=True
         alarmTime=time.time()
@@ -408,5 +408,3 @@ while True:
 
     # determine how much time to wait so that loop is executed based on checkTime seconds
     time.sleep(a["checkTime"] - ((time.time() - loopstart) % 60.0))
-
-   
